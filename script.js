@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
   themeToggleBtn.addEventListener('click', function () {
     body.classList.toggle('light-theme');
     if (body.classList.contains('light-theme')) {
-      themeIcon.src = '../icons/dark-theme-icon.svg';
+      themeIcon.src = 'icons/dark-theme-icon.svg';
       themeIcon.alt = 'dark theme';
     } else {
-      themeIcon.src = '../icons/light-theme-icon.svg';
+      themeIcon.src = 'icons/light-theme-icon.svg';
       themeIcon.alt = 'light theme';
     }
   });
