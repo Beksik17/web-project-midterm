@@ -296,7 +296,7 @@ body.light-theme .text-textarea{
 
 .intro-section{
   background-color: #1a1a1a;
-  background-image: url('../images/background-image.png');
+  background-image: url('images/background-image.png');
   background-size: 1025px 764px;
   background-position: center;
   background-repeat: no-repeat;
@@ -768,7 +768,7 @@ body.light-theme .text-textarea{
 
 .services-selection{
   appearance: none;
-  background-image: url('../icons/select-icon.svg');
+  background-image: url('icons/select-icon.svg');
   background-repeat: no-repeat;
   background-position: right 30px center;
   background-size: 18px;
@@ -793,7 +793,7 @@ body.light-theme .text-textarea{
   height: 70px;
   line-height: 70px;
   cursor: pointer;
-  background-image: url('../icons/select-icon.svg');
+  background-image: url('icons/select-icon.svg');
   background-repeat: no-repeat;
   background-position: right 30px center;
   background-size: 15px;
@@ -916,7 +916,7 @@ body.light-theme .text-textarea{
   width: 375px;
   padding-left: 65px;
   margin-top: 40px;
-  background-image: url('../icons/gmail-icon.svg');
+  background-image: url('icons/gmail-icon.svg');
   background-repeat: no-repeat;
   background-color: transparent;
   color: #ffffff;
