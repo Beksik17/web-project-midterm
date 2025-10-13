@@ -58,7 +58,7 @@ body.light-theme .footer-soc-text{
 }
 
 body.light-theme .intro-contact-btn{
-  border: 1px solid #484e53;
+  border: 2px solid #484e53;
   background: #000000;
 }
 
@@ -70,7 +70,7 @@ body.light-theme .intro-contact-btn:hover{
 body.light-theme .contact-btn{
   background: #000000;
   color: #ffffff;
-  border: 1px solid #484e53;
+  border: 2px solid #000000;
 }
 
 body.light-theme .contact-btn:hover{
