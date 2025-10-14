@@ -490,6 +490,7 @@ body.light-theme .text-textarea{
   border: 2px solid rgba(255, 255, 255, .06);
   border-radius: 12px;
   padding: 20px;
+  cursor: pointer;
 }
 
 .service-card.wide{
@@ -974,8 +975,7 @@ body.light-theme .text-textarea{
   justify-content: flex-end;
 }
 
-/* ===== CONTACT MODAL ===== */
-.contact-modal {
+.contact-modal{
   position: fixed;
   inset: 0;
   display: none;
@@ -985,53 +985,53 @@ body.light-theme .text-textarea{
   z-index: 999;
 }
 
-.contact-modal.active {
+.contact-modal.active{
   display: flex;
 }
 
-.contact-modal-content {
-  backdrop-filter: blur(6px);
+.contact-modal-content{
+  backdrop-filter: blur(20px);
   background: transparent;
   border: 2px solid var(--border-color, rgba(255,255,255,0.2));
   padding: 2rem;
-  border-radius: 1.2rem;
+  border-radius: 20px;
   width: 90%;
-  max-width: 400px;
-  color: var(--text-color, #fff);
+  max-width: 450px;
+  color: var(--text-color, #ffffff);
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
-.contact-modal-content h3 {
-  margin-bottom: 1rem;
+.contact-modal-content h3{
+  margin-bottom: 16px;
   text-align: center;
 }
 
-.contact-phone {
+.contact-phone{
   text-align: center;
-  margin-bottom: 1rem;
-  font-weight: 600;
+  margin-bottom: 16px;
+  font-weight: 500;
 }
 
-.contact-modal-form label {
+.contact-modal-form label{
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 10px;
 }
 
-.contact-modal-form textarea {
+.contact-modal-form textarea{
   width: 100%;
   border-radius: 10px;
-  border: 1px solid var(--border-color, rgba(255,255,255,0.3));
-  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.4));
+  background: rgba(255, 255, 255, 0.08);
   color: inherit;
   padding: 0.5rem;
   resize: none;
 }
 
-.send-message-btn {
+.send-message-btn{
   display: block;
   width: 100%;
-  margin-top: 1rem;
-  padding: 0.7rem;
+  margin-top: 16px;
+  padding: 13px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -1041,23 +1041,22 @@ body.light-theme .text-textarea{
   transition: 0.3s ease;
 }
 
-.send-message-btn:hover {
+.send-message-btn:hover{
   opacity: 0.8;
 }
 
-.close-modal {
+.close-modal{
   position: absolute;
   top: 10px;
   right: 15px;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 22px;
   color: inherit;
   cursor: pointer;
 }
 
-/* ===== SERVICE MODAL ===== */
-.service-modal {
+.service-modal{
   position: fixed;
   inset: 0;
   display: none;
@@ -1067,16 +1066,16 @@ body.light-theme .text-textarea{
   z-index: 998;
 }
 
-.service-modal.active {
+.service-modal.active{
   display: flex;
 }
 
-.service-modal-content {
-  backdrop-filter: blur(6px);
+.service-modal-content{
+  backdrop-filter: blur(20px);
   background: transparent;
-  border: 2px solid var(--border-color, rgba(255,255,255,0.2));
-  padding: 2rem;
-  border-radius: 1.2rem;
+  border: 2px solid var(--border-color, rgba(255,255,255,0.5));
+  padding: 32px;
+  border-radius: 20px;
   width: 90%;
   max-width: 500px;
   color: var(--text-color, #fff);
@@ -1084,13 +1083,13 @@ body.light-theme .text-textarea{
   position: relative;
 }
 
-.close-service-modal {
+.close-service-modal{
   position: absolute;
   top: 10px;
   right: 15px;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 24px;
   color: inherit;
   cursor: pointer;
 }

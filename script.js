@@ -131,7 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
   select.parentNode.insertBefore(optionsContainer, select);
 });
 
-// === CONTACT MODAL ===
 const contactBtnHeader = document.querySelector('.contact-btn');
 const contactModal = document.getElementById('contact-modal');
 const closeModalBtn = document.querySelector('.close-modal');
@@ -148,7 +147,6 @@ contactModal.addEventListener('click', (e) => {
   if (e.target === contactModal) contactModal.classList.remove('active');
 });
 
-// === SCROLL TO FOOTER FORM ===
 const contactBtnIntro = document.querySelector('.intro-contact-btn');
 const footerForm = document.querySelector('.footer-form');
 
@@ -156,30 +154,17 @@ contactBtnIntro.addEventListener('click', () => {
   footerForm.scrollIntoView({ behavior: 'smooth' });
 });
 
-// === DOWNLOAD RESUME ===
-document.querySelector('.download-btn').addEventListener('click', () => {
-  const element = document.createElement('a');
-  const resumeText = `
-  Beksultan Bakaev - Frontend Developer
+document.addEventListener('DOMContentLoaded', () => {
+  const downloadBtn = document.querySelector('.download-btn');
 
-  Skills:
-  - HTML, CSS, JavaScript, TypeScript
-  - React, Git, GitHub
-  - Responsive Web Design, UI/UX, Performance Optimization
-
-  Experience:
-  - Built adaptive websites and interactive web apps.
-  - Strong focus on performance, clean code, and user experience.
-  
-  Contact: bekss1704@gmail.com
-  `;
-  const blob = new Blob([resumeText], { type: 'application/pdf' });
-  element.href = URL.createObjectURL(blob);
-  element.download = 'Beksultan_Bakaev_Resume.pdf';
-  element.click();
+  downloadBtn.addEventListener('click', () => {
+    const link = document.createElement('a');
+    link.href = 'resume/Bakaev_Beksultan_resume.docx';
+    link.download = 'Beksss_Resume.docx';
+    link.click();
+  });
 });
 
-// === PROJECTS FILTER ===
 const categoryButtons = document.querySelectorAll('.category-btn');
 const projectCards = document.querySelectorAll('.project-card');
 
@@ -194,7 +179,6 @@ categoryButtons.forEach(btn => {
   });
 });
 
-// === SERVICE MODAL ===
 const serviceModal = document.getElementById('service-modal');
 const serviceTitle = document.getElementById('service-modal-title');
 const serviceText = document.getElementById('service-modal-text');
