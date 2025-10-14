@@ -19,8 +19,8 @@
 <body>
     <header class="header">
         <div class="header-container">
-            
-        <h2 class="brand-name">Beksultan</h2>
+
+            <h2 class="brand-name">Beksultan</h2>
 
             <nav class="header-nav">
                 <ul>
@@ -121,8 +121,7 @@
                     </article>
 
                     <article class="service-card">
-                        <img class="service-icon" src="service-icons/service-icon2.svg"
-                            alt="Frontend architecture" />
+                        <img class="service-icon" src="service-icons/service-icon2.svg" alt="Frontend architecture" />
                         <h4 class="service-name">Frontend Architecture</h4>
                         <p class="service-text">
                             I build scalable and maintainable frontend architectures, ensuring clean code structure,
@@ -178,9 +177,11 @@
                         <img src="my-projects-images/kinofox.png" alt="project">
                         <h4 class="project-name">KinoFox Website</h4>
                         <p class="project-description">In this blog, you'll learn how to create responsive and adaptive
-                            website with HTML, CSS  and JavaScript with navigation bar, anchor elements, login form, modal
-                             window for viewing trailers, sorting premieres and etc. The site allows users to watch any movies,
-                              cartoons, and TV series in good quality and without advertising.
+                            website with HTML, CSS and JavaScript with navigation bar, anchor elements, login form,
+                            modal
+                            window for viewing trailers, sorting premieres and etc. The site allows users to watch any
+                            movies,
+                            cartoons, and TV series in good quality and without advertising.
                         </p>
 
                         <div class="project-card-actions">
@@ -202,7 +203,7 @@
 
                         <div class="project-card-actions">
                             <button class="view-project-btn">
-                                <img src="icons/view-projects-icon.svg" alt="view project" href="#"/>
+                                <img src="icons/view-projects-icon.svg" alt="view project" href="#" />
                             </button>
                         </div>
                     </article>
@@ -274,7 +275,6 @@
                         </div>
                     </article>
                 </div>
-
                 <button class="view-all-btn">View All</button>
             </div>
         </section>
@@ -344,6 +344,30 @@ Work Together</pre>
             </div>
         </section>
     </footer>
+
+    <!-- Contact Modal -->
+    <div class="contact-modal" id="contact-modal">
+        <div class="contact-modal-content">
+            <button class="close-modal">&times;</button>
+            <h3>Contact Me</h3>
+            <p class="contact-phone">📞 +996 (555) 123 456</p>
+            <form class="contact-modal-form">
+                <label for="modal-message">Message</label>
+                <textarea id="modal-message" placeholder="Write something..." rows="4"></textarea>
+                <button type="submit" class="send-message-btn">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Services Modal -->
+    <div class="service-modal" id="service-modal">
+        <div class="service-modal-content">
+            <button class="close-service-modal">&times;</button>
+            <h3 id="service-modal-title"></h3>
+            <p id="service-modal-text"></p>
+        </div>
+    </div>
+
 </body>
 
 </html>

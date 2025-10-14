@@ -130,3 +130,91 @@ document.addEventListener('DOMContentLoaded', () => {
   select.parentNode.insertBefore(customSelect, select);
   select.parentNode.insertBefore(optionsContainer, select);
 });
+
+// === CONTACT MODAL ===
+const contactBtnHeader = document.querySelector('.contact-btn');
+const contactModal = document.getElementById('contact-modal');
+const closeModalBtn = document.querySelector('.close-modal');
+
+contactBtnHeader.addEventListener('click', () => {
+  contactModal.classList.add('active');
+});
+
+closeModalBtn.addEventListener('click', () => {
+  contactModal.classList.remove('active');
+});
+
+contactModal.addEventListener('click', (e) => {
+  if (e.target === contactModal) contactModal.classList.remove('active');
+});
+
+// === SCROLL TO FOOTER FORM ===
+const contactBtnIntro = document.querySelector('.intro-contact-btn');
+const footerForm = document.querySelector('.footer-form');
+
+contactBtnIntro.addEventListener('click', () => {
+  footerForm.scrollIntoView({ behavior: 'smooth' });
+});
+
+// === DOWNLOAD RESUME ===
+document.querySelector('.download-btn').addEventListener('click', () => {
+  const element = document.createElement('a');
+  const resumeText = `
+  Beksultan Bakaev - Frontend Developer
+
+  Skills:
+  - HTML, CSS, JavaScript, TypeScript
+  - React, Git, GitHub
+  - Responsive Web Design, UI/UX, Performance Optimization
+
+  Experience:
+  - Built adaptive websites and interactive web apps.
+  - Strong focus on performance, clean code, and user experience.
+  
+  Contact: bekss1704@gmail.com
+  `;
+  const blob = new Blob([resumeText], { type: 'application/pdf' });
+  element.href = URL.createObjectURL(blob);
+  element.download = 'Beksultan_Bakaev_Resume.pdf';
+  element.click();
+});
+
+// === PROJECTS FILTER ===
+const categoryButtons = document.querySelectorAll('.category-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+categoryButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const category = btn.textContent.trim().toLowerCase();
+
+    projectCards.forEach(card => {
+      const name = card.querySelector('.project-name').textContent.toLowerCase();
+      card.style.display = name.includes(category) ? 'block' : 'none';
+    });
+  });
+});
+
+// === SERVICE MODAL ===
+const serviceModal = document.getElementById('service-modal');
+const serviceTitle = document.getElementById('service-modal-title');
+const serviceText = document.getElementById('service-modal-text');
+const closeServiceModal = document.querySelector('.close-service-modal');
+
+document.querySelectorAll('.service-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const title = card.querySelector('.service-name').textContent;
+    const text = card.querySelector('.service-text').textContent;
+
+    serviceTitle.textContent = title;
+    serviceText.textContent = text;
+    serviceModal.classList.add('active');
+  });
+});
+
+closeServiceModal.addEventListener('click', () => {
+  serviceModal.classList.remove('active');
+});
+
+serviceModal.addEventListener('click', e => {
+  if (e.target === serviceModal) serviceModal.classList.remove('active');
+})
