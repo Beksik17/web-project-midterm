@@ -202,3 +202,12 @@ closeServiceModal.addEventListener('click', () => {
 serviceModal.addEventListener('click', e => {
   if (e.target === serviceModal) serviceModal.classList.remove('active');
 })
+
+const hamburger = document.getElementById('hamburger');
+const nav = document.querySelector('.header-nav');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  nav.classList.toggle('active');
+});
+
