@@ -19,6 +19,10 @@ body.light-theme .footer{
   background-color: #e0e8f6;
 }
 
+body.light-theme .hamburger span{
+  background-color: #000000;
+}
+
 body.light-theme .brand-name,
 body.light-theme .nav-link,
 body.light-theme .intro-name,
@@ -102,7 +106,6 @@ body.light-theme .form-btn:hover{
 }
 
 body.light-theme .service-card,
-body.light-theme .service-card.wide,
 body.light-theme .project-card{
   background: #ffffff;
 }
@@ -491,26 +494,6 @@ body.light-theme .text-textarea{
   border-radius: 12px;
   padding: 20px;
   cursor: pointer;
-}
-
-.service-card.wide{
-  grid-column: span 2;
-  display: flex;
-  align-items: center;
-}
-
-.service-wide-content{
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  width: 100%;
-}
-
-.chatbot-img{
-  width: 234px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 10px;
 }
 
 .service-icon{
@@ -1098,8 +1081,8 @@ body.light-theme .text-textarea{
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 22px;
+  width: 32px;
+  height: 24px;
   background: none;
   border: none;
   cursor: pointer;
@@ -1109,7 +1092,7 @@ body.light-theme .text-textarea{
 
 .hamburger span{
   display: block;
-  height: 4px;
+  height: 5px;
   width: 100%;
   background-color: #ffffff;
   border-radius: 2px;
@@ -1133,16 +1116,20 @@ body.light-theme .text-textarea{
     position: fixed;
     top: 0;
     right: -100%;
-    width: 250px;
-    height: 100vh;
+    width: 180px;
+    height: 40%;
     background-color: #1a1a1a;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 32px;
     transition: right 0.3s ease;
     z-index: 999;
+  }
+
+  .theme-container{
+    margin-right: 50px;
   }
 
   .header-nav.active{
@@ -1161,31 +1148,10 @@ body.light-theme .text-textarea{
   .hamburger{
     display: flex;
   }
-}
-
-@media (max-width: 1024px){
-  .services-grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .projects-grid{
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-
-  .intro-name{
-    font-size: 50px;
-  }
-
-  .intro-title{
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 768px){
+  
   .services-grid,
   .projects-grid{
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
   }
 
   .intro-name{
@@ -1229,5 +1195,24 @@ body.light-theme .text-textarea{
     font-size: 40px;
     margin-left: 0;
     text-align: center;
+  }
+}
+
+@media (max-width: 1024px){
+  .services-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .intro-name{
+    font-size: 50px;
+  }
+
+  .intro-title{
+    font-size: 22px;
   }
 }
