@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const contactBtnHeader = document.querySelector('.contact-btn');
 const contactModal = document.getElementById('contact-modal');
-const closeModalBtn = document.querySelector('.close-modal');
+const closeModalBtn = document.querySelector('.close-contact-modal');
 
 contactBtnHeader.addEventListener('click', () => {
   contactModal.classList.add('active');
@@ -216,4 +216,19 @@ document.addEventListener('click', (e) => {
     nav.classList.remove('active');
     hamburger.classList.remove('active');
   }
+});
+
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollTopBtn.classList.add('show');
+  } else {
+    scrollTopBtn.classList.remove('show');
+  }
+});
+
+scrollTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0, behavior: 'smooth'
+  });
 });

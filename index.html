@@ -38,6 +38,8 @@
                 </ul>
             </nav>
 
+            <button id='scrollTopBtn' class='scroll-top'>↑</button>
+
             <button class="contact-btn">Contact Me</button>
 
             <div class="theme-container">
@@ -53,7 +55,7 @@
             <div class="intro-container">
                 <div class="profile-img-container">
                     <div class="profile-img-placeholder">
-                        <img src="profile-image/profile-photo.jpeg" alt="Profile photo">
+                        <img class="profile-img" src="profile-image/profile-photo.jpeg" alt="Profile photo">
                     </div>
                 </div>
 
@@ -348,12 +350,12 @@ Work Together</pre>
 
     <div class="contact-modal" id="contact-modal">
         <div class="contact-modal-content">
-            <button class="close-modal">&times;</button>
-            <h3>Contact Me</h3>
-            <p class="contact-phone">📞 +996 (702) 352 910</p>
+            <button class="close-contact-modal">&times;</button>
+            <h2 class="contact-modal-title">Contact Me</h2>
+            <p class="contact-modal-phone">Phone: +996 (702)-352-910</p>
             <form class="contact-modal-form">
-                <label for="modal-message">Message</label>
-                <textarea id="modal-message" placeholder="Write message to me" rows="5"></textarea>
+                <label class="contact-modal-label"  for="modal-message">Message:</label>
+                <textarea class="contact-modal-textarea"  id="modal-message" placeholder="Write message to me" rows="8"></textarea>
                 <button type="submit" class="send-message-btn">Send</button>
             </form>
         </div>
@@ -362,8 +364,8 @@ Work Together</pre>
     <div class="service-modal" id="service-modal">
         <div class="service-modal-content">
             <button class="close-service-modal">&times;</button>
-            <h3 id="service-modal-title"></h3>
-            <p id="service-modal-text"></p>
+            <h3 class="service-modal-title"  id="service-modal-title"></h3>
+            <p class="service-modal-paragraph" id="service-modal-text"></p>
         </div>
     </div>
 
