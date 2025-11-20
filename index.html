@@ -2,370 +2,372 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600&family=Oleo+Script&family=Poppins:wght@400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600&family=Oleo+Script&family=Poppins:wght@400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="style.css"/>
     <script src="https://kit.fontawesome.com/4927319f6a.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
     <title>College Project</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-container">
+<header class="header">
+    <div class="header-container">
 
-            <h2 class="brand-name">Beksultan</h2>
+        <h2 class="brand-name">Beksultan</h2>
 
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Resume</a></li>
+            </ul>
+        </nav>
+
+        <button id='scrollTopBtn' class='scroll-top'>↑</button>
+
+        <button class="contact-btn">Contact Me</button>
+
+        <div class="theme-container">
+            <button class="theme-toggle" id="theme-toggle-btn">
+                <img id="theme-icon" src="icons/light-theme-icon.svg" alt="light theme"/>
             </button>
+        </div>
+    </div>
+</header>
 
-            <nav class="header-nav">
-                <ul>
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#contact" class="nav-link">Resume</a></li>
-                </ul>
-            </nav>
+<main class="main">
+    <section class="intro-section" id="home">
+        <div class="intro-container">
+            <div class="profile-img-container">
+                <div class="profile-img-placeholder">
+                    <img class="profile-img" src="profile-image/profile-photo.jpeg" alt="Profile photo">
+                </div>
+            </div>
 
-            <button id='scrollTopBtn' class='scroll-top'>↑</button>
+            <h1 class="intro-name">Bakaev Beksultan</h1>
 
-            <button class="contact-btn">Contact Me</button>
+            <h2 class="intro-title">Frontend Developer</h2>
 
-            <div class="theme-container">
-                <button class="theme-toggle" id="theme-toggle-btn">
-                    <img id="theme-icon" src="icons/light-theme-icon.svg" alt="light theme" />
-                </button>
+            <p class="intro-description">
+                As a frontend developer with experience in layout, landing page design, and the implementation of
+                responsive and modern websites, and a confident command of HTML, CSS, JavaScript, TypeScript, React,
+                Git and GitHub, I guarantee responsibility and high-quality work.
+            </p>
+
+            <button class="intro-contact-btn">Contact Me</button>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <h3 class="about-title">About Me</h3>
+
+            <p class="about-kicker">Get to know me</p>
+
+            <p class="about-paragraph">
+                Hi there! I’m Beksultan, a frontend developer passionate about crafting modern, responsive, and
+                user-friendly web experiences. I turn ideas into interactive and visually appealing interfaces that
+                connect design and functionality seamlessly.
+            </p>
+
+            <p class="about-paragraph">
+                With a strong focus on clean code, performance, and accessibility, I bring concepts to life using
+                the latest web technologies. I enjoy building scalable, maintainable applications and transforming
+                complex requirements into smooth, intuitive user journeys.
+            </p>
+
+            <p class="about-paragraph">
+                I’m always curious, learning, and exploring new tools that push the boundaries of what’s possible on
+                the web. Let’s work together to create digital products that not only look great but deliver real
+                impact.
+            </p>
+
+            <button class="download-btn">Download Resume</button>
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="services-container">
+
+            <h3 class="services-title">What I do</h3>
+
+            <p class="services-kicker">My Services</p>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <img class="service-icon" src="service-icons/service-icon2.svg" alt="UI/UX development"/>
+                    <h4 class="service-name">UI/UX Development</h4>
+                    <p class="service-text">
+                        From wireframes to pixel-perfect interfaces, I transform design concepts into responsive,
+                        accessible, and enganging user experiences that look great on any devices.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <img class="service-icon" src="service-icons/service-icon2.svg"
+                         alt="Web perfomance optimization"/>
+                    <h4 class="service-name">Web Perfomance Optimization</h4>
+                    <p class="service-text">
+                        By applying modern optimization techniques, I improve loading times, responsiveness, and
+                        overall website perfomance to deliver smooth and fast user interactions.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <img class="service-icon" src="service-icons/service-icon2.svg" alt="Frontend architecture"/>
+                    <h4 class="service-name">Frontend Architecture</h4>
+                    <p class="service-text">
+                        I build scalable and maintainable frontend architectures, ensuring clean code structure,
+                        component reusability, and efficient perfomance across large projects.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <img class="service-icon" src="service-icons/service-icon.svg" alt="Chatbots"/>
+                    <h4 class="service-name">AI Chatbots</h4>
+                    <p class="service-text">
+                        In addition to front-end development, I also worked in a team
+                        implementing artificial intelligence, fully customized and modernized for learning
+                        the Kyrgyz language.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <img class="service-icon" src="service-icons/service-icon3.svg"
+                         alt="Interactive web applications"/>
+                    <h4 class="service-name">Interactive Web Applications</h4>
+                    <p class="service-text">
+                        I create dynamic, data-driven interfaces that bring ideas to life - from
+                        dashboards to complex single-page applications with seamless user flows.
+                    </p>
+                </article>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main class="main">
-        <section class="intro-section" id="home">
-            <div class="intro-container">
-                <div class="profile-img-container">
-                    <div class="profile-img-placeholder">
-                        <img class="profile-img" src="profile-image/profile-photo.jpeg" alt="Profile photo">
+    <section class="projects-section" id="projects">
+        <div class="projects-container">
+
+            <h3 class="projects-title">Projects</h3>
+
+            <p class="projects-kicker">Some of my Work</p>
+
+            <div class="projects-categories">
+                <button class="category-btn">UI/UX Design</button>
+                <button class="category-btn">Web Applications</button>
+                <button class="category-btn">React</button>
+                <button class="category-btn">Adaptive Modern Websites</button>
+                <button class="category-btn">TypeScript</button>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="my-projects-images/kinofox.png" alt="project">
+                    <h4 class="project-name">KinoFox Website</h4>
+                    <p class="project-description">In this blog, you'll learn how to create responsive and adaptive
+                        website with HTML, CSS and JavaScript with navigation bar, anchor elements, login form,
+                        modal
+                        window for viewing trailers, sorting premieres, etc. The site allows users to watch any
+                        movies,
+                        cartoons, and TV series in good quality and without advertising.
+                    </p>
+
+                    <div class="project-card-actions">
+                        <button class="view-project-btn">
+                            <img src="icons/view-projects-icon.svg" alt="view project"/>
+                        </button>
                     </div>
-                </div>
+                </article>
 
-                <h1 class="intro-name">Bakaev Beksultan</h1>
+                <article class="project-card">
+                    <img src="my-projects-images/amazon.png" alt="project">
+                    <h4 class="project-name">Amazon Clone</h4>
+                    <p class="project-description">In this blog post, I’ll guide you through the process of creating
+                        a simple yet impressive Amazon clone using only HTML and CSS. By recreating the main
+                        elements of the Amazon homepage, such as the navigation bar, search bar, hero section,
+                        cards, and footer, you’ll gain a solid understanding of how these components come together
+                        to create an attractive website.
+                    </p>
 
-                <h2 class="intro-title">Frontend Developer</h2>
-
-                <p class="intro-description">
-                    As a frontend developer with experience in layout, landing page design, and the implementation of
-                    responsive and modern websites, and a confident command of HTML, CSS, JavaScript, TypeScript, React,
-                    Git and GitHub, I guarantee responsibility and high-quality work.
-                </p>
-
-                <button class="intro-contact-btn">Contact Me</button>
-            </div>
-        </section>
-
-        <section class="about-section" id="about">
-            <div class="about-container">
-                <h3 class="about-title">About Me</h3>
-
-                <p class="about-kicker">Get to know me</p>
-
-                <p class="about-paragraph">
-                    Hi there! I’m Beksultan, a frontend developer passionate about crafting modern, responsive, and
-                    user-friendly web experiences. I turn ideas into interactive and visually appealing interfaces that
-                    connect design and functionality seamlessly.
-                </p>
-
-                <p class="about-paragraph">
-                    With a strong focus on clean code, performance, and accessibility, I bring concepts to life using
-                    the latest web technologies. I enjoy building scalable, maintainable applications and transforming
-                    complex requirements into smooth, intuitive user journeys.
-                </p>
-
-                <p class="about-paragraph">
-                    I’m always curious, learning, and exploring new tools that push the boundaries of what’s possible on
-                    the web. Let’s work together to create digital products that not only look great but deliver real
-                    impact.
-                </p>
-
-                <button class="download-btn">Download Resume</button>
-            </div>
-        </section>
-
-        <section class="services-section" id="services">
-            <div class="services-container">
-
-                <h3 class="services-title">What I do</h3>
-
-                <p class="services-kicker">My Services</p>
-
-                <div class="services-grid">
-                    <article class="service-card">
-                        <img class="service-icon" src="service-icons/service-icon2.svg" alt="UI/UX development" />
-                        <h4 class="service-name">UI/UX Development</h4>
-                        <p class="service-text">
-                            From wireframes to pixel-perfect interfaces, I transform design concepts into responsive,
-                            accessible, and enganging user experiences that look great on any devices.
-                        </p>
-                    </article>
-
-                    <article class="service-card">
-                        <img class="service-icon" src="service-icons/service-icon2.svg"
-                            alt="Web perfomance optimization" />
-                        <h4 class="service-name">Web Perfomance Optimization</h4>
-                        <p class="service-text">
-                            By applying modern optimization techniques, I improve loading times, responsiveness, and
-                            overall website perfomance to deliver smooth and fast user interactions.
-                        </p>
-                    </article>
-
-                    <article class="service-card">
-                        <img class="service-icon" src="service-icons/service-icon2.svg" alt="Frontend architecture" />
-                        <h4 class="service-name">Frontend Architecture</h4>
-                        <p class="service-text">
-                            I build scalable and maintainable frontend architectures, ensuring clean code structure,
-                            component reusability, and efficient perfomance across large projects.
-                        </p>
-                    </article>
-
-                    <article class="service-card">
-                        <img class="service-icon" src="service-icons/service-icon.svg" alt="Chatbots" />
-                        <h4 class="service-name">AI Chatbots</h4>
-                        <p class="service-text">
-                            In addition to front-end development, I also worked in a team
-                            implementing artificial intelligence, fully customized and modernized for learning
-                            the Kyrgyz language.
-                        </p>
-                    </article>
-
-                    <article class="service-card">
-                        <img class="service-icon" src="service-icons/service-icon3.svg"
-                            alt="Interactive web applications" />
-                        <h4 class="service-name">Interactive Web Applications</h4>
-                        <p class="service-text">
-                            I create dynamic, data-driven interfaces that bring ideas to life - from
-                            dashboards to complex single-page applications with seamless user flows.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="projects-section" id="projects">
-            <div class="projects-container">
-
-                <h3 class="projects-title">Projects</h3>
-
-                <p class="projects-kicker">Some of my Work</p>
-
-                <div class="projects-categories">
-                    <button class="category-btn">UI/UX Design</button>
-                    <button class="category-btn">Web Applications</button>
-                    <button class="category-btn">React</button>
-                    <button class="category-btn">Adaptive Modern Websites</button>
-                    <button class="category-btn">TypeScript</button>
-                </div>
-
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <img src="my-projects-images/kinofox.png" alt="project">
-                        <h4 class="project-name">KinoFox Website</h4>
-                        <p class="project-description">In this blog, you'll learn how to create responsive and adaptive
-                            website with HTML, CSS and JavaScript with navigation bar, anchor elements, login form,
-                            modal
-                            window for viewing trailers, sorting premieres, etc. The site allows users to watch any
-                            movies,
-                            cartoons, and TV series in good quality and without advertising.
-                        </p>
-
-                        <div class="project-card-actions">
-                            <button class="view-project-btn">
-                                <img src="icons/view-projects-icon.svg" alt="view project" />
-                            </button>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <img src="my-projects-images/amazon.png" alt="project">
-                        <h4 class="project-name">Amazon Clone</h4>
-                        <p class="project-description">In this blog post, I’ll guide you through the process of creating
-                            a simple yet impressive Amazon clone using only HTML and CSS. By recreating the main
-                            elements of the Amazon homepage, such as the navigation bar, search bar, hero section,
-                            cards, and footer, you’ll gain a solid understanding of how these components come together
-                            to create an attractive website.
-                        </p>
-
-                        <div class="project-card-actions">
-                            <button class="view-project-btn">
-                                <img src="icons/view-projects-icon.svg" alt="view project" href="#" />
-                            </button>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <img src="my-projects-images/log-in-form.png" alt="project">
-                        <h4 class="project-name">Login Form</h4>
-                        <p class="project-description">In this blog post, I’ll show you how to create a simple yet
-                            effective login form using only HTML and CSS. We’ll start by setting up the HTML structure,
-                            and then apply CSS to make it look good. We’ll also add Google and Apple login buttons for a
-                            modern touch.
-                        </p>
-
-                        <div class="project-card-actions">
-                            <button class="view-project-btn" href="">
-                                <img src="icons/view-projects-icon.svg" alt="view project" />
-                            </button>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <img src="my-projects-images/tic-tac-toe.png" alt="project">
-                        <h4 class="project-name">Tic Tac Toe</h4>
-                        <p class="project-description">In this blog you’ll learn how to create a Tic
-                            Tac Toe Game using HTML CSS & JavaScript. Tic-tac-toe is a multiplayer game and the players
-                            of this game have to position their marks (signs) so that they can construct a continuous
-                            line of three cells or boxes vertically, horizontally, or diagonally. An opponent can stop a
-                            win by blocking the end of the opponent’s line.
-                        </p>
-
-                        <div class="project-card-actions">
-                            <button class="view-project-btn">
-                                <img src="icons/view-projects-icon.svg" alt="view project" />
-                            </button>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <img src="my-projects-images/card-slider.png" alt="project">
-                        <h4 class="project-name">Responsive Card Slider</h4>
-                        <p class="project-description">
-                            In this post, I’ll guide you through creating a fully responsive card slider with SwiperJS.
-                            It’s designed to be mobile-friendly and looks great on any device. If you’re up for a
-                            challenge, I also have a tutorial on creating an interactive card slider using just HTML,
-                            CSS, and vanilla JavaScript. This version doesn’t rely on any external libraries, so it’s a
-                            great way to learn the mechanics behind sliders and boost your coding skills.
-                        </p>
-
-                        <div class="project-card-actions">
-                            <button class="view-project-btn">
-                                <img src="icons/view-projects-icon.svg" alt="view project" />
-                            </button>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="ui-ux-design">
-                        <img src="my-projects-images/gemini-ai-chatbot.png" alt="project">
-                        <h4 class="project-name">Gemini AI Chatbot</h4>
-                        <p class="project-description">In this tutorial, I’ll guide you through the process of
-                            developing a Google Gemini AI chatbot from scratch using React.js and CSS. We’ll focus on
-                            user experience by incorporating features such as a collapsible sidebar for chat history,
-                            smooth transitions between dark and light modes, and automatic conversation saving.
-                        </p>
-
-                        <div class="project-card-actions">
-                            <button class="view-project-btn">
-                                <img src="icons/view-projects-icon.svg" alt="view project" />
-                            </button>
-                        </div>
-                    </article>
-                </div>
-                <button class="view-all-btn">View All</button>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <section class="footer-contact" id="contact">
-            <div class="footer-contact-container">
-                <h3 class="footer-title">Get In Touch</h3>
-                <p class="footer-kicker">Let's work together</p>
-                <form class="footer-form" autocomplete="off">
-                    <label for="username" class="username-label">Name</label>
-                    <input type="text" id="username" placeholder="write your name" class="username-input" />
-
-                    <label for="email" class="email-label">Email</label>
-                    <input type="email" id="email" placeholder="example@gmail.com" class="email-input" />
-
-                    <label for="service" class="services-label">Services</label>
-                    <select id="service" class="services-selection">
-                        <option value="website" class="services-option">make modern and adaptive website</option>
-                        <option value="web-application" class="services-option">create web application</option>
-                        <option value="website" class="services-option">landing</option>
-                    </select>
-
-                    <label for="text" class="textarea-label">Message</label>
-                    <textarea id="text" class="text-textarea"></textarea>
-
-                    <button class="form-btn">Get in Touch</button>
-                </form>
-            </div>
-        </section>
-
-        <section class="footer-bottom">
-            <div class="footer-bottom-container">
-                <div class="footer-slogan">
-                    <pre class="footer-soc-title">Let's
-Work Together</pre>
-                </div>
-                <div class="footer-email">
-                    <a href="mailto:bekss1704@gmail.com" class="footer-email-btn-anchor">
-                        <button type="button" class="footer-email-btn">bekss1704@gmail.com</button>
-                    </a>
-                </div>
-
-                <div class="footer-line">
-                    <div class="footer-soc-line"></div>
-                </div>
-
-                <div class="footer-bottom-row">
-                    <div class="footer-copyright">
-                        <p class="footer-soc-text">&copy; 2025. All rights reserved.</p>
+                    <div class="project-card-actions">
+                        <button class="view-project-btn">
+                            <img src="icons/view-projects-icon.svg" alt="view project" href="#"/>
+                        </button>
                     </div>
+                </article>
 
-                    <div class="footer-soc-icons">
-                        <a href="https://linkedin.com" target="blank"><img src="soc-icons/soc-icon.svg"
-                                alt="linkedin icon" /></a>
-                        <a href="https://dribbble.com" target="blank"><img src="soc-icons/soc-icon2.svg"
-                                alt="dribbble icon" /></a>
-                        <a href="https://facebook.com" target="blank"><img src="soc-icons/soc-icon3.svg"
-                                alt="facebook icon" /></a>
-                        <a href="https://instagram.com" target="blank"><img src="soc-icons/soc-icon4.svg"
-                                alt="instagram icon" /></a>
-                        <a href="https://twitter.com" target="blank"><img src="soc-icons/soc-icon5.svg"
-                                alt="twitter icon" /></a>
+                <article class="project-card">
+                    <img src="my-projects-images/log-in-form.png" alt="project">
+                    <h4 class="project-name">Login Form</h4>
+                    <p class="project-description">In this blog post, I’ll show you how to create a simple yet
+                        effective login form using only HTML and CSS. We’ll start by setting up the HTML structure,
+                        and then apply CSS to make it look good. We’ll also add Google and Apple login buttons for a
+                        modern touch.
+                    </p>
+
+                    <div class="project-card-actions">
+                        <button class="view-project-btn" href="">
+                            <img src="icons/view-projects-icon.svg" alt="view project"/>
+                        </button>
                     </div>
-                </div>
-            </div>
-        </section>
-    </footer>
+                </article>
 
-    <div class="contact-modal" id="contact-modal">
-        <div class="contact-modal-content">
-            <button class="close-contact-modal">&times;</button>
-            <h2 class="contact-modal-title">Contact Me</h2>
-            <p class="contact-modal-phone">Phone: +996 (702)-352-910</p>
-            <form class="contact-modal-form">
-                <label class="contact-modal-label"  for="modal-message">Message:</label>
-                <textarea class="contact-modal-textarea"  id="modal-message" placeholder="Write message to me" rows="8"></textarea>
-                <button type="submit" class="send-message-btn">Send</button>
+                <article class="project-card">
+                    <img src="my-projects-images/tic-tac-toe.png" alt="project">
+                    <h4 class="project-name">Tic Tac Toe</h4>
+                    <p class="project-description">In this blog you’ll learn how to create a Tic
+                        Tac Toe Game using HTML CSS & JavaScript. Tic-tac-toe is a multiplayer game and the players
+                        of this game have to position their marks (signs) so that they can construct a continuous
+                        line of three cells or boxes vertically, horizontally, or diagonally. An opponent can stop a
+                        win by blocking the end of the opponent’s line.
+                    </p>
+
+                    <div class="project-card-actions">
+                        <button class="view-project-btn">
+                            <img src="icons/view-projects-icon.svg" alt="view project"/>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="my-projects-images/card-slider.png" alt="project">
+                    <h4 class="project-name">Responsive Card Slider</h4>
+                    <p class="project-description">
+                        In this post, I’ll guide you through creating a fully responsive card slider with SwiperJS.
+                        It’s designed to be mobile-friendly and looks great on any device. If you’re up for a
+                        challenge, I also have a tutorial on creating an interactive card slider using just HTML,
+                        CSS, and vanilla JavaScript. This version doesn’t rely on any external libraries, so it’s a
+                        great way to learn the mechanics behind sliders and boost your coding skills.
+                    </p>
+
+                    <div class="project-card-actions">
+                        <button class="view-project-btn">
+                            <img src="icons/view-projects-icon.svg" alt="view project"/>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="ui-ux-design">
+                    <img src="my-projects-images/gemini-ai-chatbot.png" alt="project">
+                    <h4 class="project-name">Gemini AI Chatbot</h4>
+                    <p class="project-description">In this tutorial, I’ll guide you through the process of
+                        developing a Google Gemini AI chatbot from scratch using React.js and CSS. We’ll focus on
+                        user experience by incorporating features such as a collapsible sidebar for chat history,
+                        smooth transitions between dark and light modes, and automatic conversation saving.
+                    </p>
+
+                    <div class="project-card-actions">
+                        <button class="view-project-btn">
+                            <img src="icons/view-projects-icon.svg" alt="view project"/>
+                        </button>
+                    </div>
+                </article>
+            </div>
+            <button class="view-all-btn">View All</button>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <section class="footer-contact" id="contact">
+        <div class="footer-contact-container">
+            <h3 class="footer-title">Get In Touch</h3>
+            <p class="footer-kicker">Let's work together</p>
+            <form class="footer-form" autocomplete="off">
+                <label for="username" class="username-label">Name</label>
+                <input type="text" id="username" placeholder="write your name" class="username-input"/>
+
+                <label for="email" class="email-label">Email</label>
+                <input type="email" id="email" placeholder="example@gmail.com" class="email-input"/>
+
+                <label for="service" class="services-label">Services</label>
+                <select id="service" class="services-selection">
+                    <option value="website" class="services-option">make modern and adaptive website</option>
+                    <option value="web-application" class="services-option">create web application</option>
+                    <option value="website" class="services-option">landing</option>
+                </select>
+
+                <label for="text" class="textarea-label">Message</label>
+                <textarea id="text" class="text-textarea"></textarea>
+
+                <button class="form-btn">Get in Touch</button>
             </form>
         </div>
-    </div>
+    </section>
 
-    <div class="service-modal" id="service-modal">
-        <div class="service-modal-content">
-            <button class="close-service-modal">&times;</button>
-            <h3 class="service-modal-title"  id="service-modal-title"></h3>
-            <p class="service-modal-paragraph" id="service-modal-text"></p>
+    <section class="footer-bottom">
+        <div class="footer-bottom-container">
+            <div class="footer-slogan">
+                    <pre class="footer-soc-title">Let's
+Work Together</pre>
+            </div>
+            <div class="footer-email">
+                <a href="mailto:bekss1704@gmail.com" class="footer-email-btn-anchor">
+                    <button type="button" class="footer-email-btn">bekss1704@gmail.com</button>
+                </a>
+            </div>
+
+            <div class="footer-line">
+                <div class="footer-soc-line"></div>
+            </div>
+
+            <div class="footer-bottom-row">
+                <div class="footer-copyright">
+                    <p class="footer-soc-text">&copy; 2025. All rights reserved.</p>
+                </div>
+
+                <div class="footer-soc-icons">
+                    <a href="https://linkedin.com" target="blank"><img src="soc-icons/soc-icon.svg"
+                                                                       alt="linkedin icon"/></a>
+                    <a href="https://dribbble.com" target="blank"><img src="soc-icons/soc-icon2.svg"
+                                                                       alt="dribbble icon"/></a>
+                    <a href="https://facebook.com" target="blank"><img src="soc-icons/soc-icon3.svg"
+                                                                       alt="facebook icon"/></a>
+                    <a href="https://instagram.com" target="blank"><img src="soc-icons/soc-icon4.svg"
+                                                                        alt="instagram icon"/></a>
+                    <a href="https://twitter.com" target="blank"><img src="soc-icons/soc-icon5.svg"
+                                                                      alt="twitter icon"/></a>
+                </div>
+            </div>
         </div>
+    </section>
+</footer>
+
+<div class="contact-modal" id="contact-modal">
+    <div class="contact-modal-content">
+        <button class="close-contact-modal">&times;</button>
+        <h2 class="contact-modal-title">Contact Me</h2>
+        <p class="contact-modal-phone">Phone: +996 (702)-352-910</p>
+        <form class="contact-modal-form">
+            <label class="contact-modal-label" for="modal-message">Message:</label>
+            <textarea class="contact-modal-textarea" id="modal-message" placeholder="Write message to me"
+                      rows="8"></textarea>
+            <button type="submit" class="send-message-btn">Send</button>
+        </form>
     </div>
+</div>
+
+<div class="service-modal" id="service-modal">
+    <div class="service-modal-content">
+        <button class="close-service-modal">&times;</button>
+        <h3 class="service-modal-title" id="service-modal-title"></h3>
+        <p class="service-modal-paragraph" id="service-modal-text"></p>
+    </div>
+</div>
 
 </body>
 
