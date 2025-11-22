@@ -1012,12 +1012,12 @@ body.light-theme .profile-img-placeholder .profile-img {
 .contact-modal-content {
     backdrop-filter: blur(34px);
     background: transparent;
-    border: 2px solid var(--border-color, rgba(255, 255, 255, 0.2));
+    border: 2px solid rgba(255, 255, 255, 0.2);
     padding: 2rem;
     border-radius: 20px;
     width: 90%;
     max-width: 450px;
-    color: var(--text-color, #ffffff);
+    color: #ffffff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -1037,14 +1037,14 @@ body.light-theme .profile-img-placeholder .profile-img {
 .contact-modal-label {
     display: block;
     margin-bottom: 12px;
-    font-size: 18x;
+    font-size: 18px;
     font-weight: 400;
 }
 
 .contact-modal-textarea {
     width: 100%;
     border-radius: 10px;
-    border: 1px solid var(--border-color, rgba(255, 255, 255, 0.4));
+    border: 1px solid rgba(255, 255, 255, 0.4);
     background: rgba(255, 255, 255, 0.08);
     color: inherit;
     padding: 0.5rem;
@@ -1096,7 +1096,7 @@ body.light-theme .profile-img-placeholder .profile-img {
 .service-modal-content {
     backdrop-filter: blur(34px);
     background: transparent;
-    border: 2px solid var(--border-color, rgba(255, 255, 255, 0.5));
+    border: 2px solid rgba(255, 255, 255, 0.5);
     padding: 32px;
     border-radius: 20px;
     width: 90%;
